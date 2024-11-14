@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
+    <title class="title">Stopwatch</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <button id="clarice-button"></button>
     <audio src="./baruios/Chinese Gong Meme Sound Effect.mp3" id="tempo-acabou"></audio>
-    <audio src="./baruios/Mouse Click Sound Effect.mp3" id="baruio-click"></audio>
+    <audio src="./baruios/Audioclick.mp4" id="baruio-click"></audio>
     <div class="stopwatch">
         <div class="time" id="display">00:00</div>
+        <div><h1 class="title-tarefa"></h1></div>
         <div class="controls">
             <button class="start-button">Start</button>
             <button class="stop-button">Stop</button>
-            <button class="reiniciar-button">Reset</button>
+            <button class="set-time-button">Set-time</button>
         </div>
     </div>
+
+    <div class="modal">
+        <h2>Escolha o tempo</h2>
+        <input id="input-number" type="text" placeholder="Escolha o tempo">
+        <input id="input-name" type="text" placeholder="Nome da tarefa">
+        <button id="submit-time">Enviar</button>
+        <button id="close-modal">x</button>
+    </div>
+    <img src="./ibagens/nerds.jpg" id="img1">
+    <img src="./ibagens/nerds.jpg" id="img2">
     <script src="./app.js"></script>
 </body>
 </html>
