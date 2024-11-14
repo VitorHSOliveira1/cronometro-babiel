@@ -3,13 +3,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
 .stopwatch {
     background: white;
-    padding: 20px;
+    padding: 75px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -17,7 +17,7 @@ body {
 
 .time {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #333;
 }
 
@@ -26,7 +26,9 @@ body {
     justify-content: center;
 }
 
-.start-button{
+.start-button,
+.stop-button,
+.set-time-button {
     padding: 10px 20px;
     margin: 5px;
     font-size: 16px;
@@ -38,31 +40,114 @@ body {
     transition: background 0.3s;
 }
 
-.stop-button{
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: white;
-    transition: background 0.3s;
-}
-
-
-.reiniciar-button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: white;
-    transition: background 0.3s;
-}
-
-.button:hover {
+.start-button:hover,
+.stop-button:hover,
+.set-time-button:hover {
     background-color: #0056b3;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    width: 320px; 
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#input-number[type="number"] {
+    width: 100%;
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; 
+    appearance: textfield; 
+}
+
+.modal button#submit-time {
+    width: 50%;
+    padding: 12px;
+    margin-top: 10px; 
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal button#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.modal button#close-modal:hover {
+    color: #333;
+}
+
+
+.title-tarefa {
+    font-size: 24px; 
+    color: #555; 
+    margin-top: 10px; 
+    font-weight: bold; 
+        
+    }
+
+.stopwatch .title-container {
+    margin-top: 15px; 
+    text-align: center; 
+    padding: 10px; 
+    background-color: #f8f9fa; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.title-container .title-tarefa {
+    font-size: 20px; 
+    color: #333; 
+    font-weight: bold; 
+    margin: 0; 
+}
+
+#clarice-button{
+    top: 150px;
+    right: 50px;
+    position: absolute;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+#img1{
+    display: none;
+    position: absolute;
+    height: 735px;
+    width: 350px;
+    left: 0 ;
+}
+#img2{
+    display: none;
+    position: absolute;
+    height: 735px;
+    width: 350px;
+    right: 0;
+}
+
+
