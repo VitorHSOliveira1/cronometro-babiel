@@ -21,22 +21,6 @@ let time = 0;
 let timerIniciado = false;
 let tInterval: number;
 
-function startEasterEgg(){
-    body.style.backgroundColor = 'rgb(11, 73, 11)'
-    showTime.style.color = 'white'
-    modalPrincipal.style.background = 'rgb(57, 41, 41)'
-    startButton.style.backgroundColor = 'rgb(11, 73, 11)'
-    stopButton.style.backgroundColor = 'rgb(11, 73, 11)'
-    setTime.style.backgroundColor = 'rgb(11, 73, 11)'
-    modal.style.background = 'rgb(57, 41, 41)'
-    tituloTarefa.style.background = 'white'
-    closeButton.style.backgroundColor = 'rgb(57, 41, 41)'
-    submitTimeButton.style.backgroundColor = 'rgb(11, 73, 11)'
-    nerd1.style.display = 'block'
-    nerd2.style.display = 'block'
-}
-
-
 function formatarTempo(segundos: number): string {
     const minutos = Math.floor(segundos / 60);
     const segundosRestantes = segundos % 60;
@@ -114,6 +98,21 @@ function setTimeFromInput() {
     }
 }
 
+
+function startEasterEgg(){
+    body.style.backgroundColor = 'rgb(11, 73, 11)'
+    showTime.style.color = 'white'
+    modalPrincipal.style.background = 'rgb(57, 41, 41)'
+    startButton.style.backgroundColor = 'rgb(11, 73, 11)'
+    stopButton.style.backgroundColor = 'rgb(11, 73, 11)'
+    setTime.style.backgroundColor = 'rgb(11, 73, 11)'
+    modal.style.background = 'rgb(57, 41, 41)'
+    tituloTarefa.style.background = 'white'
+    closeButton.style.backgroundColor = 'rgb(57, 41, 41)'
+    submitTimeButton.style.backgroundColor = 'rgb(11, 73, 11)'
+    nerd1.style.display = 'block'
+    nerd2.style.display = 'block'
+}
 
 // Event listeners
 startButton?.addEventListener('click', clickSound);
